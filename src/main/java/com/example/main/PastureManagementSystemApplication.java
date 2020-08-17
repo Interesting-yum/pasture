@@ -1,0 +1,22 @@
+package com.example.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
+/**
+ * springboot 启动类
+ */
+@SpringCloudApplication
+@EnableEurekaServer
+@EnableFeignClients
+@EnableAutoConfiguration
+public class PastureManagementSystemApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(PastureManagementSystemApplication.class, args);
+    }
+
+}

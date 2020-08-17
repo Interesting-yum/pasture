@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.main.mapper.DataMapper">
+  <resultMap id="BaseResultMap" type="com.example.main.model.entity.Data">
+    <!--@mbg.generated-->
+    <!--@Table `data`-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="data_name" jdbcType="VARCHAR" property="dataName" />
+    <result column="data_type" jdbcType="VARCHAR" property="dataType" />
+    <result column="data_level" jdbcType="INTEGER" property="dataLevel" />
+    <result column="data_content" jdbcType="VARCHAR" property="dataContent" />
+    <result column="data_remark" jdbcType="VARCHAR" property="dataRemark" />
+    <result column="data_record_time" jdbcType="TIMESTAMP" property="dataRecordTime" />
+    <result column="data_operator" jdbcType="INTEGER" property="dataOperator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, data_name, data_type, data_level, data_content, data_remark, data_record_time, 
+    data_operator
+  </sql>
+</mapper>

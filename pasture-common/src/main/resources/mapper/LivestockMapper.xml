@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.pasture.mapper.LivestockMapper">
+  <resultMap id="BaseResultMap" type="com.example.pasture.model.entity.Livestock">
+    <!--@mbg.generated-->
+    <!--@Table livestock-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="livestock_name" jdbcType="VARCHAR" property="livestockName" />
+    <result column="livestock_type" jdbcType="INTEGER" property="livestockType" />
+    <result column="livestock_weight" jdbcType="DOUBLE" property="livestockWeight" />
+    <result column="livestock_height" jdbcType="DOUBLE" property="livestockHeight" />
+    <result column="livestock_length" jdbcType="DOUBLE" property="livestockLength" />
+    <result column="livestock_varieties" jdbcType="VARCHAR" property="livestockVarieties" />
+    <result column="livestock_gender" jdbcType="INTEGER" property="livestockGender" />
+    <result column="livestock_age" jdbcType="INTEGER" property="livestockAge" />
+    <result column="livestock_birthday" jdbcType="DATE" property="livestockBirthday" />
+    <result column="livestock_remark" jdbcType="VARCHAR" property="livestockRemark" />
+    <result column="livestock_record_time" jdbcType="TIMESTAMP" property="livestockRecordTime" />
+    <result column="livestock_operator" jdbcType="INTEGER" property="livestockOperator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, livestock_name, livestock_type, livestock_weight, livestock_height, livestock_length, 
+    livestock_varieties, livestock_gender, livestock_age, livestock_birthday, livestock_remark, 
+    livestock_record_time, livestock_operator
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update livestock
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="livestock_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockName,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="livestock_type = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockType,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="livestock_weight = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockWeight,jdbcType=DOUBLE}
+        </foreach>
+      </trim>
+      <trim prefix="livestock_height = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockHeight,jdbcType=DOUBLE}
+        </foreach>
+      </trim>
+      <trim prefix="livestock_length = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockLength,jdbcType=DOUBLE}
+        </foreach>
+      </trim>
+      <trim prefix="livestock_varieties = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockVarieties,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="livestock_gender = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockGender,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="livestock_age = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockAge,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="livestock_birthday = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockBirthday,jdbcType=DATE}
+        </foreach>
+      </trim>
+      <trim prefix="livestock_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockRemark,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="livestock_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockRecordTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="livestock_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.livestockOperator,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update livestock
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="livestock_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockName != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockName,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="livestock_type = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockType != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockType,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="livestock_weight = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockWeight != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockWeight,jdbcType=DOUBLE}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="livestock_height = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockHeight != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockHeight,jdbcType=DOUBLE}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="livestock_length = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockLength != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockLength,jdbcType=DOUBLE}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="livestock_varieties = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockVarieties != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockVarieties,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="livestock_gender = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockGender != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockGender,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="livestock_age = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockAge != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockAge,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="livestock_birthday = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockBirthday != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockBirthday,jdbcType=DATE}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="livestock_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockRemark != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockRemark,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="livestock_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockRecordTime != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockRecordTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="livestock_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.livestockOperator != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.livestockOperator,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into livestock
+    (livestock_name, livestock_type, livestock_weight, livestock_height, livestock_length, 
+      livestock_varieties, livestock_gender, livestock_age, livestock_birthday, livestock_remark, 
+      livestock_record_time, livestock_operator)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.livestockName,jdbcType=VARCHAR}, #{item.livestockType,jdbcType=INTEGER}, 
+        #{item.livestockWeight,jdbcType=DOUBLE}, #{item.livestockHeight,jdbcType=DOUBLE}, 
+        #{item.livestockLength,jdbcType=DOUBLE}, #{item.livestockVarieties,jdbcType=VARCHAR}, 
+        #{item.livestockGender,jdbcType=INTEGER}, #{item.livestockAge,jdbcType=INTEGER}, 
+        #{item.livestockBirthday,jdbcType=DATE}, #{item.livestockRemark,jdbcType=VARCHAR}, 
+        #{item.livestockRecordTime,jdbcType=TIMESTAMP}, #{item.livestockOperator,jdbcType=INTEGER}
+        )
+    </foreach>
+  </insert>
+</mapper>

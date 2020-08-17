@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.main.mapper.VideoMapper">
+  <resultMap id="BaseResultMap" type="com.example.main.model.entity.Video">
+    <!--@mbg.generated-->
+    <!--@Table video-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="video_name" jdbcType="VARCHAR" property="videoName" />
+    <result column="video_interface" jdbcType="VARCHAR" property="videoInterface" />
+    <result column="video_url" jdbcType="VARCHAR" property="videoUrl" />
+    <result column="video_size" jdbcType="INTEGER" property="videoSize" />
+    <result column="video_isonline" jdbcType="INTEGER" property="videoIsonline" />
+    <result column="video_factoryinfo" jdbcType="VARCHAR" property="videoFactoryinfo" />
+    <result column="video_remark" jdbcType="VARCHAR" property="videoRemark" />
+    <result column="video_record_time" jdbcType="TIMESTAMP" property="videoRecordTime" />
+    <result column="video_operator" jdbcType="INTEGER" property="videoOperator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, video_name, video_interface, video_url, video_size, video_isonline, video_factoryinfo, 
+    video_remark, video_record_time, video_operator
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update video
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="video_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.videoName,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="video_interface = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.videoInterface,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="video_url = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.videoUrl,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="video_size = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.videoSize,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="video_isonline = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.videoIsonline,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="video_factoryinfo = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.videoFactoryinfo,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="video_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.videoRemark,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="video_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.videoRecordTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="video_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.videoOperator,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update video
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="video_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.videoName != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.videoName,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="video_interface = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.videoInterface != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.videoInterface,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="video_url = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.videoUrl != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.videoUrl,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="video_size = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.videoSize != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.videoSize,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="video_isonline = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.videoIsonline != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.videoIsonline,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="video_factoryinfo = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.videoFactoryinfo != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.videoFactoryinfo,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="video_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.videoRemark != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.videoRemark,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="video_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.videoRecordTime != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.videoRecordTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="video_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.videoOperator != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.videoOperator,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into video
+    (video_name, video_interface, video_url, video_size, video_isonline, video_factoryinfo, 
+      video_remark, video_record_time, video_operator)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.videoName,jdbcType=VARCHAR}, #{item.videoInterface,jdbcType=VARCHAR}, #{item.videoUrl,jdbcType=VARCHAR}, 
+        #{item.videoSize,jdbcType=INTEGER}, #{item.videoIsonline,jdbcType=INTEGER}, #{item.videoFactoryinfo,jdbcType=VARCHAR}, 
+        #{item.videoRemark,jdbcType=VARCHAR}, #{item.videoRecordTime,jdbcType=TIMESTAMP}, 
+        #{item.videoOperator,jdbcType=INTEGER})
+    </foreach>
+  </insert>
+</mapper>

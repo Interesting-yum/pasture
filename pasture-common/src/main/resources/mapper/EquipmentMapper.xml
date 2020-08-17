@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.pasture.mapper.EquipmentMapper">
+  <resultMap id="BaseResultMap" type="com.example.pasture.model.entity.Equipment">
+    <!--@mbg.generated-->
+    <!--@Table equipment-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="equipment_name" jdbcType="VARCHAR" property="equipmentName" />
+    <result column="equipment_interface" jdbcType="VARCHAR" property="equipmentInterface" />
+    <result column="equipment_material" jdbcType="VARCHAR" property="equipmentMaterial" />
+    <result column="equipment_inner_address" jdbcType="VARCHAR" property="equipmentInnerAddress" />
+    <result column="equipment_physical_address" jdbcType="VARCHAR" property="equipmentPhysicalAddress" />
+    <result column="equipment_inner_value" jdbcType="VARCHAR" property="equipmentInnerValue" />
+    <result column="equipment_isonline" jdbcType="INTEGER" property="equipmentIsonline" />
+    <result column="equipment_factoryinfo" jdbcType="VARCHAR" property="equipmentFactoryinfo" />
+    <result column="equipment_remark" jdbcType="VARCHAR" property="equipmentRemark" />
+    <result column="equipment_record_time" jdbcType="TIMESTAMP" property="equipmentRecordTime" />
+    <result column="equipment_operator" jdbcType="INTEGER" property="equipmentOperator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, equipment_name, equipment_interface, equipment_material, equipment_inner_address, 
+    equipment_physical_address, equipment_inner_value, equipment_isonline, equipment_factoryinfo, 
+    equipment_remark, equipment_record_time, equipment_operator
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update equipment
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="equipment_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentName,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="equipment_interface = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentInterface,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="equipment_material = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentMaterial,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="equipment_inner_address = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentInnerAddress,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="equipment_physical_address = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentPhysicalAddress,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="equipment_inner_value = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentInnerValue,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="equipment_isonline = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentIsonline,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="equipment_factoryinfo = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentFactoryinfo,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="equipment_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentRemark,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="equipment_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentRecordTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="equipment_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentOperator,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update equipment
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="equipment_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.equipmentName != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentName,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="equipment_interface = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.equipmentInterface != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentInterface,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="equipment_material = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.equipmentMaterial != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentMaterial,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="equipment_inner_address = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.equipmentInnerAddress != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentInnerAddress,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="equipment_physical_address = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.equipmentPhysicalAddress != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentPhysicalAddress,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="equipment_inner_value = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.equipmentInnerValue != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentInnerValue,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="equipment_isonline = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.equipmentIsonline != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentIsonline,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="equipment_factoryinfo = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.equipmentFactoryinfo != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentFactoryinfo,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="equipment_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.equipmentRemark != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentRemark,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="equipment_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.equipmentRecordTime != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentRecordTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="equipment_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.equipmentOperator != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.equipmentOperator,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into equipment
+    (equipment_name, equipment_interface, equipment_material, equipment_inner_address, 
+      equipment_physical_address, equipment_inner_value, equipment_isonline, equipment_factoryinfo, 
+      equipment_remark, equipment_record_time, equipment_operator)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.equipmentName,jdbcType=VARCHAR}, #{item.equipmentInterface,jdbcType=VARCHAR}, 
+        #{item.equipmentMaterial,jdbcType=VARCHAR}, #{item.equipmentInnerAddress,jdbcType=VARCHAR}, 
+        #{item.equipmentPhysicalAddress,jdbcType=VARCHAR}, #{item.equipmentInnerValue,jdbcType=VARCHAR}, 
+        #{item.equipmentIsonline,jdbcType=INTEGER}, #{item.equipmentFactoryinfo,jdbcType=VARCHAR}, 
+        #{item.equipmentRemark,jdbcType=VARCHAR}, #{item.equipmentRecordTime,jdbcType=TIMESTAMP}, 
+        #{item.equipmentOperator,jdbcType=INTEGER})
+    </foreach>
+  </insert>
+</mapper>

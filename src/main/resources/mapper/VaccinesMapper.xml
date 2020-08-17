@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.main.mapper.VaccinesMapper">
+  <resultMap id="BaseResultMap" type="com.example.main.model.entity.Vaccines">
+    <!--@mbg.generated-->
+    <!--@Table vaccines-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="vaccines_name" jdbcType="VARCHAR" property="vaccinesName" />
+    <result column="vaccines_type" jdbcType="INTEGER" property="vaccinesType" />
+    <result column="vaccines_dose" jdbcType="INTEGER" property="vaccinesDose" />
+    <result column="vaccines_specifications" jdbcType="VARCHAR" property="vaccinesSpecifications" />
+    <result column="vaccines_time" jdbcType="TIMESTAMP" property="vaccinesTime" />
+    <result column="vaccines_remark" jdbcType="VARCHAR" property="vaccinesRemark" />
+    <result column="vaccines_record_time" jdbcType="TIMESTAMP" property="vaccinesRecordTime" />
+    <result column="vaccines_operator" jdbcType="VARCHAR" property="vaccinesOperator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, vaccines_name, vaccines_type, vaccines_dose, vaccines_specifications, vaccines_time, 
+    vaccines_remark, vaccines_record_time, vaccines_operator
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update vaccines
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="vaccines_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesName,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_type = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesType,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_dose = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesDose,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_specifications = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesSpecifications,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesRemark,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesRecordTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesOperator,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update vaccines
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="vaccines_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.vaccinesName != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesName,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_type = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.vaccinesType != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesType,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_dose = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.vaccinesDose != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesDose,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_specifications = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.vaccinesSpecifications != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesSpecifications,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.vaccinesTime != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.vaccinesRemark != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesRemark,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.vaccinesRecordTime != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesRecordTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="vaccines_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.vaccinesOperator != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.vaccinesOperator,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into vaccines
+    (vaccines_name, vaccines_type, vaccines_dose, vaccines_specifications, vaccines_time, 
+      vaccines_remark, vaccines_record_time, vaccines_operator)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.vaccinesName,jdbcType=VARCHAR}, #{item.vaccinesType,jdbcType=INTEGER}, #{item.vaccinesDose,jdbcType=INTEGER}, 
+        #{item.vaccinesSpecifications,jdbcType=VARCHAR}, #{item.vaccinesTime,jdbcType=TIMESTAMP}, 
+        #{item.vaccinesRemark,jdbcType=VARCHAR}, #{item.vaccinesRecordTime,jdbcType=TIMESTAMP}, 
+        #{item.vaccinesOperator,jdbcType=VARCHAR})
+    </foreach>
+  </insert>
+</mapper>

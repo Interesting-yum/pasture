@@ -1,0 +1,16 @@
+package com.example.main.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.example.main.model.entity.Vaccines;
+import java.util.List;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+@Mapper
+public interface VaccinesMapper extends BaseMapper<Vaccines> {
+    int updateBatch(List<Vaccines> list);
+
+    int updateBatchSelective(List<Vaccines> list);
+
+    int batchInsert(@Param("list") List<Vaccines> list);
+}

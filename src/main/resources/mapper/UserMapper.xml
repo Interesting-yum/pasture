@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.main.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.example.main.model.entity.User">
+    <!--@mbg.generated-->
+    <!--@Table `user`-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_weixin" jdbcType="VARCHAR" property="userWeixin" />
+    <result column="user_account" jdbcType="VARCHAR" property="userAccount" />
+    <result column="user_password" jdbcType="VARCHAR" property="userPassword" />
+    <result column="user_phone" jdbcType="VARCHAR" property="userPhone" />
+    <result column="user_jurisdiction" jdbcType="VARCHAR" property="userJurisdiction" />
+    <result column="user_remark" jdbcType="VARCHAR" property="userRemark" />
+    <result column="user_record_time" jdbcType="TIMESTAMP" property="userRecordTime" />
+    <result column="user_operator" jdbcType="INTEGER" property="userOperator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_name, user_weixin, user_account, user_password, user_phone, user_jurisdiction, 
+    user_remark, user_record_time, user_operator
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update `user`
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="user_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.userName,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="user_weixin = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.userWeixin,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="user_account = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.userAccount,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="user_password = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.userPassword,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="user_phone = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.userPhone,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="user_jurisdiction = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.userJurisdiction,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="user_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.userRemark,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="user_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.userRecordTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="user_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.userOperator,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update `user`
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="user_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.userName != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.userName,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="user_weixin = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.userWeixin != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.userWeixin,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="user_account = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.userAccount != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.userAccount,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="user_password = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.userPassword != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.userPassword,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="user_phone = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.userPhone != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.userPhone,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="user_jurisdiction = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.userJurisdiction != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.userJurisdiction,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="user_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.userRemark != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.userRemark,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="user_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.userRecordTime != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.userRecordTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="user_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.userOperator != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.userOperator,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into `user`
+    (user_name, user_weixin, user_account, user_password, user_phone, user_jurisdiction, 
+      user_remark, user_record_time, user_operator)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.userName,jdbcType=VARCHAR}, #{item.userWeixin,jdbcType=VARCHAR}, #{item.userAccount,jdbcType=VARCHAR}, 
+        #{item.userPassword,jdbcType=VARCHAR}, #{item.userPhone,jdbcType=VARCHAR}, #{item.userJurisdiction,jdbcType=VARCHAR}, 
+        #{item.userRemark,jdbcType=VARCHAR}, #{item.userRecordTime,jdbcType=TIMESTAMP}, 
+        #{item.userOperator,jdbcType=INTEGER})
+    </foreach>
+  </insert>
+</mapper>

@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="springcloud-1:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68ad9c79-1607-4965-9751-98189dc972b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/pasture.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/controller/EquipmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/mapper/DataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/mapper/EquipmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/mapper/FileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/mapper/LivestockMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/mapper/PastureMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/mapper/RelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/mapper/VaccinesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/mapper/VideoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/model/entity/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/model/entity/Equipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/model/entity/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/model/entity/Livestock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/model/entity/Pasture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/model/entity/Relation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/model/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/model/entity/Vaccines.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/model/entity/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/impl/DataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/impl/EquipmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/impl/LivestockServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/impl/PastureServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/impl/RelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/impl/VaccinesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/impl/VideoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/intf/DataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/intf/EquipmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/intf/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/intf/LivestockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/intf/PastureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/intf/RelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/intf/UserProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/intf/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/intf/VaccinesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/service/intf/VideoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/resources/mapper/DataMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/resources/mapper/EquipmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/resources/mapper/FileMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/resources/mapper/LivestockMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/resources/mapper/PastureMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/resources/mapper/RelationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/resources/mapper/VaccinesMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-common/src/main/resources/mapper/VideoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-equipment/src/main/java/com/example/pasture/controller/EquipmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-equipment/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-equipment/src/test/java/com/example/servicerole/ServiceRoleApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-main/src/main/java/com/example/pasture/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-main/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-map/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-user/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-user/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-user/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-user/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-user/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-user/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture-user/src/main/java/com/example/pasture/config/DruidConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasture.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/mapper/DataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/mapper/EquipmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/mapper/FileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/mapper/LivestockMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/mapper/PastureMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/mapper/RelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/mapper/VaccinesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/mapper/VideoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Equipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Livestock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Pasture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Relation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Vaccines.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/impl/EquipmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/impl/LivestockServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/impl/PastureServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/impl/RelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/impl/VaccinesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/impl/VideoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/EquipmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/LivestockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/PastureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/RelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/VaccinesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/VideoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/DataMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/EquipmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/FileMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/LivestockMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/PastureMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/RelationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/VaccinesMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/VideoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/springcloud-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/springcloud-1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/springcloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/springcloud.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/EurekaServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/service/MenuServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/service/MenuServiceProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/test/java/com/example/eurekaserver/EurekaServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/example/eurekaserver/EurekaServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-common/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-common/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-common/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/ServiceMediaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/src/main/java/com/example/pasture/PastureEquipmentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/src/main/java/com/example/pasture/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/config/DruidConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/src/main/java/com/example/pasture/config/DruidConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/src/main/java/com/example/pasture/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/controller/MediaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/mapper/MediaMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/Media.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/MediaExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/MenuExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/Usr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/UsrExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/impl/MediaServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/intf/IMediaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/intf/RoleProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/intf/UserProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/intf/menuProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/resources/mapper/MediaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/test/java/com/example/servicemedia/ServiceMediaApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/src/test/java/com/example/servicemedia/ServiceMediaApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/ServiceMediaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/ServletInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/config/DruidConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/controller/MediaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/mapper/MediaMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/service/impl/MediaServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/mapper/MediaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/test-classes/com/example/servicemedia/ServiceMediaApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-common/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-common/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/ServiceMenuApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/src/main/java/com/example/pasture/PastureMapApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-user/src/main/java/com/example/pasture/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/controller/MenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/mapper/MenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/model/entity/Media.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/model/entity/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/model/entity/MenuExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/model/entity/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/model/entity/Usr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/impl/MenuServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/intf/IMenuService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/intf/MediaProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/intf/RoleProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/intf/UserProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/utils/CommandUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/src/main/java/com/example/pasture/utils/CommandUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-user/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/test/java/com/example/servicemenu/ServiceMenuApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/src/test/java/com/example/pasture/ServiceMenuApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/ServiceMenuApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/ServletInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/controller/MenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/mapper/MenuMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/service/impl/MenuServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/mapper/MenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/test-classes/com/example/servicemenu/ServiceMenuApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-common/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/ServiceRoleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/src/main/java/com/example/pasture/PastureMainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/src/main/java/com/example/pasture/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/config/DruidConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-common/src/main/java/com/example/pasture/config/DruidConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/controller/RoleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/mapper/RolesMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/model/entity/Media.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/model/entity/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/model/entity/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/model/entity/RolesExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/model/entity/Usr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/impl/RoleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/intf/IRoleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/intf/MediaProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/intf/MenuProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/intf/UserProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/resources/mapper/RolesMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/test/java/com/example/servicerole/ServiceRoleApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-common/src/test/java/com/example/servicerole/ServiceRoleApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/ServiceRoleApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/ServletInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/config/DruidConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/controller/RoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/service/impl/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/test-classes/com/example/servicerole/ServiceRoleApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-map/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/ServiceUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-user/src/main/java/com/example/pasture/PastureUserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/src/main/java/com/example/pasture/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/config/DruidConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-equipment/src/main/java/com/example/pasture/config/DruidConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-user/src/main/java/com/example/pasture/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/hystrix/CommandUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-user/src/main/java/com/example/pasture/hystrix/CommandUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/mapper/UsrMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/model/entity/Media.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/model/entity/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/model/entity/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/model/entity/Usr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/model/entity/UsrExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/impl/UsrServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/intf/IUsrService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/intf/MediaProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/intf/MenuProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/intf/RoleProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-main/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/test/java/com/example/serviceuser/ServiceUserApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/pasture-user/src/test/java/com/example/pasture/PastureUserApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/ServiceUserApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/ServletInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/config/DruidConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/hystrix/CommandUtil$Method.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/hystrix/CommandUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/mapper/UsrMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/service/impl/UsrServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/test-classes/com/example/serviceuser/ServiceUserApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/SpringCloudsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/PastureManagementSystemApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MediaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/RoleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Media.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Usr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/MediaProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/MenuProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/RoleProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/UserProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - jdbc:mysql://localhost:3306/pasture?serverTimezone=Asia/Shanghai" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - jdbc:mysql://localhost:3306/pasture?serverTimezone=Asia/Shanghai" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - jdbc:mysql://localhost:3306/pasture?serverTimezone=Asia/Shanghai" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="pasture: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="git@github.com:/dazongcaipu/springcloud-1.git" />
+        <option value="https://github.com/Interesting-yum/pasture.git" />
+      </set>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="G:\mavenTest\repository" />
+        <option name="userSettingsFile" value="G:\mavenTest\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="nexus" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1a49khV8eMPxYjPitY31F3Uiw6x" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/pasture-main/src/main/java/com/example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pasture-common/src/main/java" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2824287" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workplace\pasture\pasture-common\src\main\resources\mapper" />
+      <recent name="D:\workplace\pasture\pasture-common\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.serviceuser.entity" />
+      <recent name="com.example.main.entity" />
+      <recent name="com.example.servicemedia.entity" />
+      <recent name="com.example.servicemenu.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workplace\pasture" />
+      <recent name="D:\workplace\pasture\pasture-equipment\src\main\resources" />
+      <recent name="D:\workplace\pasture\pasture-map\src\main\resources" />
+      <recent name="D:\workplace\pasture\pasture-main\src\main\resources" />
+      <recent name="D:\workplace\springcloud-1\src\main\java\com\example\main" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn -e" />
+      <command value="mvn -e deploy" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PastureEquipmentApplication">
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PastureEquipmentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="pasture-equipment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.pasture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.pasture.PastureEquipmentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PastureMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="pasture-main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.pasture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.pasture.PastureMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PastureMapApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="pasture-map" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.pasture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.pasture.PastureMapApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PastureUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="pasture-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.pasture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.pasture.PastureUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.41" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="springcloud-1:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/springcloud_1_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springcloud-1_5" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56624" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="springcloud-1:war exploded" />
+        </option>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.41" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_springcloud-1" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56624" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.PastureMapApplication (1)" />
+      <item itemvalue="Spring Boot.PastureMainApplication (1)" />
+      <item itemvalue="Spring Boot.PastureEquipmentApplication" />
+      <item itemvalue="Spring Boot.PastureUserApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.41" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PastureEquipmentApplication" />
+        <item itemvalue="Spring Boot.PastureUserApplication" />
+        <item itemvalue="Spring Boot.PastureMapApplication (1)" />
+        <item itemvalue="Spring Boot.PastureMainApplication (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.2839404" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL - jdbc:mysql://localhost:3306/pasture?serverTimezone=Asia/Shanghai" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68ad9c79-1607-4965-9751-98189dc972b2" name="Default Changelist" comment="" />
+      <created>1585984143655</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585984143655</updated>
+      <workItem from="1585984147951" duration="10279000" />
+      <workItem from="1586016148358" duration="2408000" />
+      <workItem from="1586269794586" duration="2645000" />
+      <workItem from="1586357562867" duration="2316000" />
+      <workItem from="1586518869394" duration="11690000" />
+      <workItem from="1586581378735" duration="13707000" />
+      <workItem from="1586626413405" duration="6565000" />
+      <workItem from="1586789462010" duration="2342000" />
+      <workItem from="1586864567901" duration="3887000" />
+      <workItem from="1587198229208" duration="839000" />
+      <workItem from="1591462709559" duration="25000" />
+      <workItem from="1591462816190" duration="1298000" />
+      <workItem from="1591544325069" duration="592000" />
+      <workItem from="1591703533794" duration="1288000" />
+      <workItem from="1592057161123" duration="1203000" />
+      <workItem from="1592146003093" duration="1074000" />
+      <workItem from="1592224907374" duration="1024000" />
+      <workItem from="1592225971538" duration="108000" />
+      <workItem from="1592226100186" duration="2155000" />
+      <workItem from="1592407448882" duration="668000" />
+      <workItem from="1592408178583" duration="1237000" />
+      <workItem from="1592409440120" duration="2463000" />
+      <workItem from="1592478933669" duration="140000" />
+      <workItem from="1592479099739" duration="14042000" />
+    </task>
+    <task id="LOCAL-00001" summary="项目结构变更">
+      <created>1585987466217</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585987466217</updated>
+    </task>
+    <task id="LOCAL-00002" summary="项目结构变更">
+      <created>1585988457012</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585988457012</updated>
+    </task>
+    <task id="LOCAL-00003" summary="添加日志打印">
+      <created>1586272786901</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586272786901</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="项目结构变更" />
+    <MESSAGE value="添加日志打印" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加日志打印" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="722" y="271" key="#BuildArtifactsBeforeRunChooser" timestamp="1586585507786">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="722" y="271" key="#BuildArtifactsBeforeRunChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1586585507786" />
+    <state x="451" y="89" key="#Notifications" timestamp="1585987603552">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="451" y="89" key="#Notifications/0.0.1920.1032@0.0.1920.1032" timestamp="1585987603552" />
+    <state x="381" y="74" key="#Plugins" timestamp="1592226077767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="381" y="74" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1592226077767" />
+    <state x="451" y="89" key="#Project_Structure" timestamp="1586789694181">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="451" y="89" key="#Project_Structure/0.0.1920.1032@0.0.1920.1032" timestamp="1586789694181" />
+    <state x="233" y="0" key="#SQL_Dialects" timestamp="1592498936303">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#SQL_Dialects/0.0.1280.680@0.0.1280.680" timestamp="1592498936303" />
+    <state x="273" y="105" width="1174" height="842" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592482685272">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="273" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1592482685272" />
+    <state x="409" y="159" width="1174" height="842" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586586880773" />
+    <state x="439" y="154" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1592489224438">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="439" y="154" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1592489224438" />
+    <state x="659" y="234" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586586099858" />
+    <state x="659" y="253" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586585926206">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="659" y="253" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586585926206" />
+    <state x="285" y="279" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592486423742">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="285" y="279" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1592486423742" />
+    <state x="427" y="423" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586627428208" />
+    <state x="237" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592411658741">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="237" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1592411658741" />
+    <state x="415" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592492078782">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="415" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1592492078782" />
+    <state x="623" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1585986884321" />
+    <state x="723" y="304" key="#com.intellij.tools.ToolEditorDialog" timestamp="1586585540618">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="723" y="304" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586585540618" />
+    <state x="648" y="209" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1586554011675">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="648" y="209" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586554011675" />
+    <state x="645" y="322" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586865158993">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="645" y="322" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1032@0.0.1920.1032" timestamp="1586865158993" />
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1592487205012">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1592487205012" />
+    <state x="206" y="34" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1586633185156" />
+    <state x="678" y="164" key="DetectedRootsChooserDialog" timestamp="1586553811223">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="678" y="164" key="DetectedRootsChooserDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586553811223" />
+    <state x="457" y="138" key="FileChooserDialogImpl" timestamp="1592489348140">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="457" y="138" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1592489348140" />
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591463589763" />
+    <state x="685" y="209" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1586554101091" />
+    <state x="465" y="237" width="375" height="206" key="Github.CreateGistDialog" timestamp="1592486133796">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="465" y="237" width="375" height="206" key="Github.CreateGistDialog/0.0.1280.680@0.0.1280.680" timestamp="1592486133796" />
+    <state x="518" y="232" width="269" height="217" key="Github.ShareDialog" timestamp="1592496331935">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="518" y="232" width="269" height="217" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1592496331935" />
+    <state width="864" height="151" key="GridCell.Tab.0.bottom" timestamp="1592496387511">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592496387511" />
+    <state width="980" height="327" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="864" height="151" key="GridCell.Tab.0.center" timestamp="1592496387511">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592496387511" />
+    <state width="980" height="327" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="864" height="151" key="GridCell.Tab.0.left" timestamp="1592496387511">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592496387511" />
+    <state width="980" height="327" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="864" height="151" key="GridCell.Tab.0.right" timestamp="1592496387511">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592496387511" />
+    <state width="980" height="327" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="864" height="151" key="GridCell.Tab.1.bottom" timestamp="1592496387511">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592496387511" />
+    <state width="980" height="327" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="864" height="151" key="GridCell.Tab.1.center" timestamp="1592496387511">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1592496387511" />
+    <state width="980" height="327" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="864" height="151" key="GridCell.Tab.1.left" timestamp="1592496387511">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1592496387511" />
+    <state width="980" height="327" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="864" height="151" key="GridCell.Tab.1.right" timestamp="1592496387511">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1592496387511" />
+    <state width="980" height="327" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="864" height="151" key="GridCell.Tab.2.bottom" timestamp="1592496387512">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592496387512" />
+    <state width="980" height="327" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.2.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="864" height="151" key="GridCell.Tab.2.center" timestamp="1592496387511">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1592496387511" />
+    <state width="980" height="327" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.2.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="864" height="151" key="GridCell.Tab.2.left" timestamp="1592496387511">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1592496387511" />
+    <state width="980" height="327" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.2.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="864" height="151" key="GridCell.Tab.2.right" timestamp="1592496387512">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="864" height="151" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1592496387512" />
+    <state width="980" height="327" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1591464140365" />
+    <state width="1364" height="294" key="GridCell.Tab.2.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586882701261" />
+    <state width="1364" height="484" key="GridCell.Tab.3.bottom" timestamp="1586792112894">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1364" height="484" key="GridCell.Tab.3.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586792112894" />
+    <state width="1364" height="484" key="GridCell.Tab.3.center" timestamp="1586792112894">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1364" height="484" key="GridCell.Tab.3.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586792112894" />
+    <state width="1364" height="484" key="GridCell.Tab.3.left" timestamp="1586792112894">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1364" height="484" key="GridCell.Tab.3.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586792112894" />
+    <state width="1364" height="484" key="GridCell.Tab.3.right" timestamp="1586792112894">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1364" height="484" key="GridCell.Tab.3.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586792112894" />
+    <state width="1391" height="615" key="GridCell.Tab.4.bottom" timestamp="1586546397948">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1391" height="615" key="GridCell.Tab.4.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586546397948" />
+    <state width="1391" height="615" key="GridCell.Tab.4.center" timestamp="1586546397948">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1391" height="615" key="GridCell.Tab.4.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586546397948" />
+    <state width="1391" height="615" key="GridCell.Tab.4.left" timestamp="1586546397948">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1391" height="615" key="GridCell.Tab.4.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586546397948" />
+    <state width="1391" height="615" key="GridCell.Tab.4.right" timestamp="1586546397948">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1391" height="615" key="GridCell.Tab.4.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586546397948" />
+    <state x="249" y="0" key="Maven.ArtifactSearchDialog" timestamp="1592486078502">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="249" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1592486078502" />
+    <state x="373" y="84" key="Maven.ArtifactSearchDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586593742693" />
+    <state x="511" y="140" key="NewModule_or_Project.wizard" timestamp="1587198335638">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="511" y="140" key="NewModule_or_Project.wizard/0.0.1920.1032@0.0.1920.1032" timestamp="1587198335638" />
+    <state x="224" y="0" key="SettingsEditor" timestamp="1592487125886">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="224" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1592487125886" />
+    <state x="269" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592227503877" />
+    <state x="336" y="0" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1586586655763" />
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1586633222557">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1586633222557" />
+    <state x="439" y="119" key="chooseDestDirectoryDialog" timestamp="1592408497938">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="439" y="119" key="chooseDestDirectoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1592408497938" />
+    <state x="373" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1592409446703">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="373" y="195" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1592409446703" />
+    <state x="447" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592226145516" />
+    <state x="559" y="295" key="com.intellij.ide.util.TipDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1587198229097" />
+    <state x="603" y="385" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586554009570">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="603" y="385" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1032@0.0.1920.1032" timestamp="1586554009570" />
+    <state x="861" y="185" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1586585541971">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="861" y="185" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.0.1920.1032@0.0.1920.1032" timestamp="1586585541971" />
+    <state x="531" y="227" width="840" height="1034" key="run.anything.popup" timestamp="1586589800374">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="531" y="227" width="840" height="1034" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1586589800374" />
+    <state x="451" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592226311653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="451" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592226311653" />
+    <state x="459" y="121" key="spring file set editor" timestamp="1586789674566">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="459" y="121" key="spring file set editor/0.0.1920.1032@0.0.1920.1032" timestamp="1586789674566" />
+  </component>
+</project>

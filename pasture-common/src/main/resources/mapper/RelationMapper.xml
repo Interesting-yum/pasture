@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.pasture.mapper.RelationMapper">
+  <resultMap id="BaseResultMap" type="com.example.pasture.model.entity.Relation">
+    <!--@mbg.generated-->
+    <!--@Table relation-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="relation_main" jdbcType="VARCHAR" property="relationMain" />
+    <result column="relation_main_id" jdbcType="INTEGER" property="relationMainId" />
+    <result column="relation_second" jdbcType="VARCHAR" property="relationSecond" />
+    <result column="relation_second_id" jdbcType="INTEGER" property="relationSecondId" />
+    <result column="relation_remark" jdbcType="VARCHAR" property="relationRemark" />
+    <result column="relation_record_time" jdbcType="TIMESTAMP" property="relationRecordTime" />
+    <result column="relation_operator" jdbcType="INTEGER" property="relationOperator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, relation_main, relation_main_id, relation_second, relation_second_id, relation_remark, 
+    relation_record_time, relation_operator
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update relation
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="relation_main = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.relationMain,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="relation_main_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.relationMainId,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="relation_second = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.relationSecond,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="relation_second_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.relationSecondId,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="relation_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.relationRemark,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="relation_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.relationRecordTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="relation_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.relationOperator,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update relation
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="relation_main = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.relationMain != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.relationMain,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="relation_main_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.relationMainId != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.relationMainId,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="relation_second = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.relationSecond != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.relationSecond,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="relation_second_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.relationSecondId != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.relationSecondId,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="relation_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.relationRemark != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.relationRemark,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="relation_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.relationRecordTime != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.relationRecordTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="relation_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.relationOperator != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.relationOperator,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into relation
+    (relation_main, relation_main_id, relation_second, relation_second_id, relation_remark, 
+      relation_record_time, relation_operator)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.relationMain,jdbcType=VARCHAR}, #{item.relationMainId,jdbcType=INTEGER}, 
+        #{item.relationSecond,jdbcType=VARCHAR}, #{item.relationSecondId,jdbcType=INTEGER}, 
+        #{item.relationRemark,jdbcType=VARCHAR}, #{item.relationRecordTime,jdbcType=TIMESTAMP}, 
+        #{item.relationOperator,jdbcType=INTEGER})
+    </foreach>
+  </insert>
+</mapper>

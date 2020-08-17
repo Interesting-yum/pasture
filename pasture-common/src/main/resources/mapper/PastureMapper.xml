@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.pasture.mapper.PastureMapper">
+  <resultMap id="BaseResultMap" type="com.example.pasture.model.entity.Pasture">
+    <!--@mbg.generated-->
+    <!--@Table pasture-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pasture_name" jdbcType="VARCHAR" property="pastureName" />
+    <result column="pasture_range" jdbcType="VARCHAR" property="pastureRange" />
+    <result column="pasture_quality" jdbcType="VARCHAR" property="pastureQuality" />
+    <result column="pasture_lng" jdbcType="VARCHAR" property="pastureLng" />
+    <result column="pasture_lat" jdbcType="VARCHAR" property="pastureLat" />
+    <result column="pasture_remark" jdbcType="VARCHAR" property="pastureRemark" />
+    <result column="pasture_record_time" jdbcType="TIMESTAMP" property="pastureRecordTime" />
+    <result column="pasture_operator" jdbcType="INTEGER" property="pastureOperator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, pasture_name, pasture_range, pasture_quality, pasture_lng, pasture_lat, pasture_remark, 
+    pasture_record_time, pasture_operator
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update pasture
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="pasture_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.pastureName,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="pasture_range = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.pastureRange,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="pasture_quality = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.pastureQuality,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="pasture_lng = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.pastureLng,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="pasture_lat = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.pastureLat,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="pasture_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.pastureRemark,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="pasture_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.pastureRecordTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="pasture_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.pastureOperator,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update pasture
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="pasture_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.pastureName != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.pastureName,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="pasture_range = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.pastureRange != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.pastureRange,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="pasture_quality = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.pastureQuality != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.pastureQuality,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="pasture_lng = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.pastureLng != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.pastureLng,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="pasture_lat = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.pastureLat != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.pastureLat,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="pasture_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.pastureRemark != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.pastureRemark,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="pasture_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.pastureRecordTime != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.pastureRecordTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="pasture_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.pastureOperator != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.pastureOperator,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into pasture
+    (pasture_name, pasture_range, pasture_quality, pasture_lng, pasture_lat, pasture_remark, 
+      pasture_record_time, pasture_operator)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.pastureName,jdbcType=VARCHAR}, #{item.pastureRange,jdbcType=VARCHAR}, #{item.pastureQuality,jdbcType=VARCHAR}, 
+        #{item.pastureLng,jdbcType=VARCHAR}, #{item.pastureLat,jdbcType=VARCHAR}, #{item.pastureRemark,jdbcType=VARCHAR}, 
+        #{item.pastureRecordTime,jdbcType=TIMESTAMP}, #{item.pastureOperator,jdbcType=INTEGER}
+        )
+    </foreach>
+  </insert>
+</mapper>

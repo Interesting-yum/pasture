@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSerializeUid" value="true" />
+        <option name="batchInsert" value="true" />
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
+        <option name="insertMethodEnabled" value="false" />
+        <option name="javaMapperPackage" value="com.example.pasture.mapper" />
+        <option name="javaMapperPath" value="D:\workplace\pasture\pasture-common\src\main\java" />
+        <option name="javaModelPackage" value="com.example.pasture.model.entity" />
+        <option name="javaModelPath" value="D:\workplace\pasture\pasture-common\src\main\java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="pasture-map" />
+        <option name="lombokAllArgConstructor" value="true" />
+        <option name="lombokBuilderAnnotation" value="true" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="lombokNoArgsConstructor" value="true" />
+        <option name="mapperAnnotaion" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="pasture-map">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.example.pasture.mapper" />
+                  <option name="javaMapperPath" value="D:\workplace\pasture\pasture-common\src\main\java" />
+                  <option name="javaModelPacakge" value="com.example.pasture.model.entity" />
+                  <option name="javaModelPath" value="D:\workplace\pasture\pasture-common\src\main\java" />
+                  <option name="javaServiceInterfacePackage" value="com.example.main.service.intf" />
+                  <option name="javaServiceInterfacePath" value="D:\workplace\pasture\pasture-common\src\main\java" />
+                  <option name="javaServicePackage" value="com.example.pasture.service.impl" />
+                  <option name="javaServicePath" value="D:\workplace\pasture\pasture-common\src\main\java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="D:\workplace\pasture\pasture-common\src\main\java" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="p3CComment" value="true" />
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="pasture:data">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="javaModelName" value="Data" />
+                  <option name="moduleName" value="pasture-map" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="pasture:equipment">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="javaModelName" value="Equipment" />
+                  <option name="moduleName" value="pasture-map" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="pasture:file">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="javaModelName" value="File" />
+                  <option name="moduleName" value="pasture-map" />
+                  <option name="updateBatch" value="true" />
+                  <option name="updateBatchSelective" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="pasture:livestock">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="javaModelName" value="Livestock" />
+                  <option name="moduleName" value="pasture-map" />
+                  <option name="updateBatch" value="true" />
+                  <option name="updateBatchSelective" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="pasture:pasture">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="javaModelName" value="Pasture" />
+                  <option name="moduleName" value="pasture-map" />
+                  <option name="updateBatch" value="true" />
+                  <option name="updateBatchSelective" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="pasture:relation">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="javaModelName" value="Relation" />
+                  <option name="moduleName" value="pasture-map" />
+                  <option name="updateBatch" value="true" />
+                  <option name="updateBatchSelective" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="pasture:user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="javaModelName" value="User" />
+                  <option name="moduleName" value="pasture-map" />
+                  <option name="updateBatch" value="true" />
+                  <option name="updateBatchSelective" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="pasture:vaccines">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="javaModelName" value="Vaccines" />
+                  <option name="moduleName" value="pasture-map" />
+                  <option name="updateBatch" value="true" />
+                  <option name="updateBatchSelective" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="pasture:video">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="javaModelName" value="Video" />
+                  <option name="moduleName" value="pasture-map" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="updateBatch" value="true" />
+        <option name="updateBatchSelective" value="true" />
+        <option name="userMybatisPlus" value="true" />
+        <option name="xmlMapperPackage" value="mapper" />
+        <option name="xmlMapperPath" value="D:\workplace\pasture\pasture-common\src\main\java" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

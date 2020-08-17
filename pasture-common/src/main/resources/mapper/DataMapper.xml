@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.pasture.mapper.DataMapper">
+  <resultMap id="BaseResultMap" type="com.example.pasture.model.entity.Data">
+    <!--@mbg.generated-->
+    <!--@Table `data`-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="data_name" jdbcType="VARCHAR" property="dataName" />
+    <result column="data_type" jdbcType="VARCHAR" property="dataType" />
+    <result column="data_level" jdbcType="INTEGER" property="dataLevel" />
+    <result column="data_content" jdbcType="VARCHAR" property="dataContent" />
+    <result column="data_remark" jdbcType="VARCHAR" property="dataRemark" />
+    <result column="data_record_time" jdbcType="TIMESTAMP" property="dataRecordTime" />
+    <result column="data_operator" jdbcType="INTEGER" property="dataOperator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, data_name, data_type, data_level, data_content, data_remark, data_record_time, 
+    data_operator
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update `data`
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="data_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.dataName,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="data_type = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.dataType,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="data_level = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.dataLevel,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="data_content = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.dataContent,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="data_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.dataRemark,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="data_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.dataRecordTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="data_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.dataOperator,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update `data`
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="data_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.dataName != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.dataName,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="data_type = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.dataType != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.dataType,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="data_level = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.dataLevel != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.dataLevel,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="data_content = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.dataContent != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.dataContent,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="data_remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.dataRemark != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.dataRemark,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="data_record_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.dataRecordTime != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.dataRecordTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="data_operator = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.dataOperator != null">
+            when id = #{item.id,jdbcType=INTEGER} then #{item.dataOperator,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <insert id="batchInsert" parameterType="map">
+    <!--@mbg.generated-->
+    insert into `data`
+    (id, data_name, data_type, data_level, data_content, data_remark, data_record_time, 
+      data_operator)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.id,jdbcType=INTEGER}, #{item.dataName,jdbcType=VARCHAR}, #{item.dataType,jdbcType=VARCHAR}, 
+        #{item.dataLevel,jdbcType=INTEGER}, #{item.dataContent,jdbcType=VARCHAR}, #{item.dataRemark,jdbcType=VARCHAR}, 
+        #{item.dataRecordTime,jdbcType=TIMESTAMP}, #{item.dataOperator,jdbcType=INTEGER}
+        )
+    </foreach>
+  </insert>
+</mapper>

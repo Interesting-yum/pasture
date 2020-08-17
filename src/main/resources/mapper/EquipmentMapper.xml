@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.main.mapper.EquipmentMapper">
+  <resultMap id="BaseResultMap" type="com.example.main.model.entity.Equipment">
+    <!--@mbg.generated-->
+    <!--@Table equipment-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="equipment_name" jdbcType="VARCHAR" property="equipmentName" />
+    <result column="equipment_interface" jdbcType="VARCHAR" property="equipmentInterface" />
+    <result column="equipment_material" jdbcType="VARCHAR" property="equipmentMaterial" />
+    <result column="equipment_inner_address" jdbcType="VARCHAR" property="equipmentInnerAddress" />
+    <result column="equipment_physical_address" jdbcType="VARCHAR" property="equipmentPhysicalAddress" />
+    <result column="equipment_inner_value" jdbcType="VARCHAR" property="equipmentInnerValue" />
+    <result column="equipment_isonline" jdbcType="INTEGER" property="equipmentIsonline" />
+    <result column="equipment_factoryinfo" jdbcType="VARCHAR" property="equipmentFactoryinfo" />
+    <result column="equipment_remark" jdbcType="VARCHAR" property="equipmentRemark" />
+    <result column="equipment_record_time" jdbcType="TIMESTAMP" property="equipmentRecordTime" />
+    <result column="equipment_operator" jdbcType="INTEGER" property="equipmentOperator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, equipment_name, equipment_interface, equipment_material, equipment_inner_address, 
+    equipment_physical_address, equipment_inner_value, equipment_isonline, equipment_factoryinfo, 
+    equipment_remark, equipment_record_time, equipment_operator
+  </sql>
+  <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into equipment
+    (equipment_name, equipment_interface, equipment_material, equipment_inner_address, 
+      equipment_physical_address, equipment_inner_value, equipment_isonline, equipment_factoryinfo, 
+      equipment_remark, equipment_record_time, equipment_operator)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.equipmentName,jdbcType=VARCHAR}, #{item.equipmentInterface,jdbcType=VARCHAR}, 
+        #{item.equipmentMaterial,jdbcType=VARCHAR}, #{item.equipmentInnerAddress,jdbcType=VARCHAR}, 
+        #{item.equipmentPhysicalAddress,jdbcType=VARCHAR}, #{item.equipmentInnerValue,jdbcType=VARCHAR}, 
+        #{item.equipmentIsonline,jdbcType=INTEGER}, #{item.equipmentFactoryinfo,jdbcType=VARCHAR}, 
+        #{item.equipmentRemark,jdbcType=VARCHAR}, #{item.equipmentRecordTime,jdbcType=TIMESTAMP}, 
+        #{item.equipmentOperator,jdbcType=INTEGER})
+    </foreach>
+  </insert>
+</mapper>
