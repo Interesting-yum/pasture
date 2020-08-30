@@ -10,8 +10,8 @@ eureka:
     registerWithEureka: true
 #    fetchRegistry: false
     serviceUrl:
-       defaultZone: http://server2:8777/eureka/           # 集群版
-#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    # 单机版
+       #defaultZone: http://server2:8777/eureka/           # 集群版
+       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    # 单机版
 
 spring:
   datasource:
@@ -31,9 +31,6 @@ spring:
 #          thread:
 #            timeoutInMilliseconds: 500
 
-mybatis-plus:
-  type-aliases-package: com.example.main.model.entity
-  mapper-locations: classpath:mapper/*.xml
 ribbon:
   ConnectTimeout: 500 # 连接超时时长
   ReadTimeout: 2000 # 数据通信超时时长

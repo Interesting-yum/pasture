@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pasture-main" />
+        <module name="pasture-user" />
         <module name="pasture-map" />
         <module name="eureka-server" />
-        <module name="pasture-user" />
         <module name="pasture-common" />
+        <module name="pasture-main" />
         <module name="springcloud" />
         <module name="service-ribbon" />
         <module name="service-media" />

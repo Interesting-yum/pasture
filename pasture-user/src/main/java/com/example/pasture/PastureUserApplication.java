@@ -7,7 +7,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@MapperScan("com.example.serviceuser.mapper")
+@MapperScan("com.example.pasture.mapper")
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients

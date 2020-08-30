@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.pasture.mapper.UserDao">
+  <resultMap id="BaseResultMap" type="com.example.pasture.model.Do.User">
+    <!--@Table `user`-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_weixin" jdbcType="VARCHAR" property="userWeixin" />
+    <result column="user_account" jdbcType="VARCHAR" property="userAccount" />
+    <result column="user_password" jdbcType="VARCHAR" property="userPassword" />
+    <result column="user_phone" jdbcType="VARCHAR" property="userPhone" />
+    <result column="user_jurisdiction" jdbcType="VARCHAR" property="userJurisdiction" />
+    <result column="user_remark" jdbcType="VARCHAR" property="userRemark" />
+    <result column="user_record_time" jdbcType="TIMESTAMP" property="userRecordTime" />
+    <result column="user_operator" jdbcType="INTEGER" property="userOperator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_name, user_weixin, user_account, user_password, user_phone, user_jurisdiction, 
+    user_remark, user_record_time, user_operator
+  </sql>
+
+  <select id="login" parameterType="com.example.pasture.model.Vo.LoginVo" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"></include> from user where user_account = #{userAccount,jdbcType=VARCHAR} and user_password = #{userPassword,jdbcType=VARCHAR}
+  </select>
+
+</mapper>

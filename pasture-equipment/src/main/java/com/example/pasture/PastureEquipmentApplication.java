@@ -13,7 +13,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 public class PastureEquipmentApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PastureEquipmentApplication.class, args);
+        SpringApplication.run(PastureCommonApplication.class, args);
     }
 
 }

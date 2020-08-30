@@ -7,10 +7,15 @@
         <option name="batchInsert" value="true" />
         <option name="generateService" value="true" />
         <option name="generateServiceInterface" value="true" />
+        <option name="generatedClassPathList">
+          <list>
+            <option value="D:\workplace\pasture\pasture-common\src\main\java\com\example\pasture\model\Do" />
+          </list>
+        </option>
         <option name="insertMethodEnabled" value="false" />
         <option name="javaMapperPackage" value="com.example.pasture.mapper" />
         <option name="javaMapperPath" value="D:\workplace\pasture\pasture-common\src\main\java" />
-        <option name="javaModelPackage" value="com.example.pasture.model.entity" />
+        <option name="javaModelPackage" value="com.example.pasture.entity" />
         <option name="javaModelPath" value="D:\workplace\pasture\pasture-common\src\main\java" />
         <option name="lastDatabaseCrudChooseModuleName" value="pasture-map" />
         <option name="lombokAllArgConstructor" value="true" />
@@ -25,7 +30,7 @@
                 <UserPackageAndPathInfoByModule>
                   <option name="javaMapperPackage" value="com.example.pasture.mapper" />
                   <option name="javaMapperPath" value="D:\workplace\pasture\pasture-common\src\main\java" />
-                  <option name="javaModelPacakge" value="com.example.pasture.model.entity" />
+                  <option name="javaModelPacakge" value="com.example.pasture.entity" />
                   <option name="javaModelPath" value="D:\workplace\pasture\pasture-common\src\main\java" />
                   <option name="javaServiceInterfacePackage" value="com.example.main.service.intf" />
                   <option name="javaServiceInterfacePath" value="D:\workplace\pasture\pasture-common\src\main\java" />

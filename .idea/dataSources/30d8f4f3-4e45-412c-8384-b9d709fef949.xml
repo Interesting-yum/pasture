@@ -928,36 +928,43 @@
     </column>
     <column id="239" parent="229" name="data_name">
       <Position>2</Position>
+      <Comment>数据名称</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="240" parent="229" name="data_type">
       <Position>3</Position>
+      <Comment>数据类型</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="241" parent="229" name="data_level">
       <Position>4</Position>
+      <Comment>等级</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="242" parent="229" name="data_content">
       <Position>5</Position>
+      <Comment>数据内容</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="243" parent="229" name="data_remark">
       <Position>6</Position>
+      <Comment>备注</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="244" parent="229" name="data_record_time">
       <Position>7</Position>
+      <Comment>记录时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="245" parent="229" name="data_operator">
       <Position>8</Position>
+      <Comment>操作人</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -975,56 +982,67 @@
     </column>
     <column id="248" parent="230" name="equipment_name">
       <Position>2</Position>
+      <Comment>设备名称</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="249" parent="230" name="equipment_interface">
       <Position>3</Position>
+      <Comment>设备接口</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="250" parent="230" name="equipment_material">
       <Position>4</Position>
+      <Comment>设备材质</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="251" parent="230" name="equipment_inner_address">
       <Position>5</Position>
+      <Comment>内在地址</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="252" parent="230" name="equipment_physical_address">
       <Position>6</Position>
+      <Comment>物理地址</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="253" parent="230" name="equipment_inner_value">
       <Position>7</Position>
+      <Comment>内部定值</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="254" parent="230" name="equipment_isonline">
       <Position>8</Position>
+      <Comment>是否在线</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="255" parent="230" name="equipment_factoryinfo">
       <Position>9</Position>
+      <Comment>厂家信息</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="256" parent="230" name="equipment_remark">
       <Position>10</Position>
+      <Comment>备注</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="257" parent="230" name="equipment_record_time">
       <Position>11</Position>
+      <Comment>记录时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="258" parent="230" name="equipment_operator">
       <Position>12</Position>
+      <Comment>操作人</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1042,41 +1060,49 @@
     </column>
     <column id="261" parent="231" name="file_name">
       <Position>2</Position>
+      <Comment>文件名</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="262" parent="231" name="file_type">
       <Position>3</Position>
+      <Comment>文件类型</Comment>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="263" parent="231" name="file_size">
       <Position>4</Position>
+      <Comment>文件大小</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="264" parent="231" name="file_url">
       <Position>5</Position>
+      <Comment>文件URL地址</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="265" parent="231" name="file_data">
       <Position>6</Position>
+      <Comment>文件Base64的值</Comment>
       <DataType>blob|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="266" parent="231" name="file_remark">
       <Position>7</Position>
+      <Comment>备注</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="267" parent="231" name="file_record_time">
       <Position>8</Position>
+      <Comment>记录时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="268" parent="231" name="file_operator">
       <Position>9</Position>
+      <Comment>操作人</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1094,61 +1120,73 @@
     </column>
     <column id="271" parent="232" name="livestock_name">
       <Position>2</Position>
+      <Comment>姓名</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="272" parent="232" name="livestock_type">
       <Position>3</Position>
+      <Comment>类型</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="273" parent="232" name="livestock_weight">
       <Position>4</Position>
+      <Comment>体重</Comment>
       <DataType>double|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="274" parent="232" name="livestock_height">
       <Position>5</Position>
+      <Comment>身高</Comment>
       <DataType>double|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="275" parent="232" name="livestock_length">
       <Position>6</Position>
+      <Comment>长度</Comment>
       <DataType>double|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="276" parent="232" name="livestock_varieties">
       <Position>7</Position>
+      <Comment>品种</Comment>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="277" parent="232" name="livestock_gender">
       <Position>8</Position>
+      <Comment>性别</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="278" parent="232" name="livestock_age">
       <Position>9</Position>
+      <Comment>年龄</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="279" parent="232" name="livestock_birthday">
       <Position>10</Position>
+      <Comment>生日</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="280" parent="232" name="livestock_remark">
       <Position>11</Position>
+      <Comment>备注</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="281" parent="232" name="livestock_record_time">
       <Position>12</Position>
+      <Comment>记录时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="282" parent="232" name="livestock_operator">
       <Position>13</Position>
+      <Comment>操作人</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1166,41 +1204,49 @@
     </column>
     <column id="285" parent="233" name="pasture_name">
       <Position>2</Position>
+      <Comment>牧场名称</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="286" parent="233" name="pasture_range">
       <Position>3</Position>
+      <Comment>牧场范围</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="287" parent="233" name="pasture_quality">
       <Position>4</Position>
+      <Comment>土地品种</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="288" parent="233" name="pasture_lng">
       <Position>5</Position>
+      <Comment>经度</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="289" parent="233" name="pasture_lat">
       <Position>6</Position>
+      <Comment>纬度</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="290" parent="233" name="pasture_remark">
       <Position>7</Position>
+      <Comment>备注</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="291" parent="233" name="pasture_record_time">
       <Position>8</Position>
+      <Comment>记录时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="292" parent="233" name="pasture_operator">
       <Position>9</Position>
+      <Comment>操作人</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1218,36 +1264,43 @@
     </column>
     <column id="295" parent="234" name="relation_main">
       <Position>2</Position>
+      <Comment>关联表名</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="296" parent="234" name="relation_main_id">
       <Position>3</Position>
+      <Comment>关联表id</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="297" parent="234" name="relation_second">
       <Position>4</Position>
+      <Comment>从属关联表名</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="298" parent="234" name="relation_second_id">
       <Position>5</Position>
+      <Comment>从属关联表id</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="299" parent="234" name="relation_remark">
       <Position>6</Position>
+      <Comment>备注</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="300" parent="234" name="relation_record_time">
       <Position>7</Position>
+      <Comment>记录时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="301" parent="234" name="relation_operator">
       <Position>8</Position>
+      <Comment>操作人</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1265,46 +1318,55 @@
     </column>
     <column id="304" parent="235" name="user_name">
       <Position>2</Position>
+      <Comment>用户姓名</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="305" parent="235" name="user_weixin">
       <Position>3</Position>
+      <Comment>用户微信绑定openid</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="306" parent="235" name="user_account">
       <Position>4</Position>
+      <Comment>用户登录账号</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="307" parent="235" name="user_password">
       <Position>5</Position>
+      <Comment>用户密码</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="308" parent="235" name="user_phone">
       <Position>6</Position>
+      <Comment>用户手机号</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="309" parent="235" name="user_jurisdiction">
       <Position>7</Position>
+      <Comment>用户权限</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="310" parent="235" name="user_remark">
       <Position>8</Position>
+      <Comment>备注</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="311" parent="235" name="user_record_time">
       <Position>9</Position>
+      <Comment>记录时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="312" parent="235" name="user_operator">
       <Position>10</Position>
+      <Comment>操作人</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1322,16 +1384,19 @@
     </column>
     <column id="315" parent="236" name="vaccines_name">
       <Position>2</Position>
+      <Comment>疫苗名称</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="316" parent="236" name="vaccines_type">
       <Position>3</Position>
+      <Comment>疫苗类型</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="317" parent="236" name="vaccines_dose">
       <Position>4</Position>
+      <Comment>剂量</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1343,21 +1408,25 @@
     </column>
     <column id="319" parent="236" name="vaccines_time">
       <Position>6</Position>
+      <Comment>注射时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="320" parent="236" name="vaccines_remark">
       <Position>7</Position>
+      <Comment>备注</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="321" parent="236" name="vaccines_record_time">
       <Position>8</Position>
+      <Comment>记录时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="322" parent="236" name="vaccines_operator">
       <Position>9</Position>
+      <Comment>操作人</Comment>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1375,46 +1444,55 @@
     </column>
     <column id="325" parent="237" name="video_name">
       <Position>2</Position>
+      <Comment>视频名称</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="326" parent="237" name="video_interface">
       <Position>3</Position>
+      <Comment>视频接口</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="327" parent="237" name="video_url">
       <Position>4</Position>
+      <Comment>视频路径</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="328" parent="237" name="video_size">
       <Position>5</Position>
+      <Comment>视频大小</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="329" parent="237" name="video_isonline">
       <Position>6</Position>
+      <Comment>是否在线</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="330" parent="237" name="video_factoryinfo">
       <Position>7</Position>
+      <Comment>厂家信息</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="331" parent="237" name="video_remark">
       <Position>8</Position>
+      <Comment>备注</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="332" parent="237" name="video_record_time">
       <Position>9</Position>
+      <Comment>记录时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="333" parent="237" name="video_operator">
       <Position>10</Position>
+      <Comment>操作人</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>

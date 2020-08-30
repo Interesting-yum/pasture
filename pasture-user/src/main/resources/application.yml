@@ -30,8 +30,8 @@ spring:
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true,druid.stat.slowSqlMills=500
   redis:
-#    database: 16
-#    timeout: 0
+#    database: 1
+    timeout: 2000
     # Redis服务器地址
     host: 127.0.0.1
     # Redis服务器连接端口
@@ -40,14 +40,15 @@ spring:
     password:
     # 连接池最大连接数（使用负值表示没有限制）
     client-name: "myRedis"
-#    pool:
-#    max-active: 8
-#    # 连接池最大阻塞等待时间（使用负值表示没有限制）
-#    max-wait: -1
-#    # 连接池中的最大空闲连接
-#    max-idle: 8
-#    # 连接池中的最小空闲连接
-#    min-idle: 0
+    jedis:
+      pool:
+        max-active: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池中的最小空闲连接
+        min-idle: 0
 
 eureka:
   client:
@@ -71,12 +72,12 @@ logging:
   file:
     path: /data/logs/${spring.application.name}
   config: classpath:logback-spring.xml
-zuul:
-  prefix: /zuul
-  ignored-services: "*"
-  routes:
-#    service-menu: /menu/**
-    route-name: #路由别名，无其他意义，与例1效果一致
-      service-id: pasture-user
-      path: /user/**
+#zuul:
+#  prefix: /zuul
+#  ignored-services: "*"
+#  routes:
+##    service-menu: /menu/**
+#    route-name: #路由别名，无其他意义，与例1效果一致
+#      service-id: pasture-user
+#      path: /user/**
 #  ignored-patterns: \**/service-menu/**
