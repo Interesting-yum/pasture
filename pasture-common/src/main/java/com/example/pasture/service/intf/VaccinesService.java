@@ -1,7 +1,7 @@
 package com.example.pasture.service.intf;
 
 import java.util.List;
-import com.example.pasture.model.entity.Vaccines;
+import com.example.pasture.model.Do.Vaccines;
 import com.baomidou.mybatisplus.extension.service.IService;
 public interface VaccinesService extends IService<Vaccines>{
 

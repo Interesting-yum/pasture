@@ -1,7 +1,7 @@
 package com.example.pasture.service.intf;
 
 import java.util.List;
-import com.example.pasture.model.entity.Video;
+import com.example.pasture.model.Do.Video;
 import com.baomidou.mybatisplus.extension.service.IService;
 public interface VideoService extends IService<Video>{
 

@@ -1,7 +1,7 @@
 package com.example.pasture.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.example.pasture.model.entity.Vaccines;
+import com.example.pasture.model.Do.Vaccines;
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

@@ -1,6 +1,6 @@
 package com.example.pasture.service.intf;
 
-import com.example.pasture.model.entity.Pasture;
+import com.example.pasture.model.Do.Pasture;
 import java.util.List;
 import com.baomidou.mybatisplus.extension.service.IService;
 public interface PastureService extends IService<Pasture>{

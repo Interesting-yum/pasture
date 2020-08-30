@@ -4,8 +4,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.pasture.model.entity.Video;
 import com.example.pasture.mapper.VideoMapper;
+import com.example.pasture.model.Do.Video;
 import com.example.pasture.service.intf.VideoService;
 @Service
 public class VideoServiceImpl extends ServiceImpl<VideoMapper, Video> implements VideoService{

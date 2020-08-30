@@ -4,8 +4,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.example.pasture.model.Do.Relation;
 import com.example.pasture.mapper.RelationMapper;
-import com.example.pasture.model.entity.Relation;
 import com.example.pasture.service.intf.RelationService;
 @Service
 public class RelationServiceImpl extends ServiceImpl<RelationMapper, Relation> implements RelationService{

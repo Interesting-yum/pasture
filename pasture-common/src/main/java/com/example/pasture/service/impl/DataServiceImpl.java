@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.pasture.mapper.DataMapper;
-import com.example.pasture.model.entity.Data;
+import com.example.pasture.model.Do.Data;
 import com.example.pasture.service.intf.DataService;
 @Service
 public class DataServiceImpl extends ServiceImpl<DataMapper, Data> implements DataService{

@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.pasture.model.entity.Pasture;
+import com.example.pasture.model.Do.Pasture;
 import com.example.pasture.mapper.PastureMapper;
 import com.example.pasture.service.intf.PastureService;
 @Service
